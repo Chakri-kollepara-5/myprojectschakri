@@ -1,0 +1,260 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --primary-color: #6c5ce7;
+    --secondary-color: #a29bfe;
+    --background-light: #f5f5f5;
+    --background-dark: #1e1e2e;
+    --card-bg-light: rgba(255, 255, 255, 0.8);
+    --card-bg-dark: rgba(255, 255, 255, 0.1);
+    --text-light: #333;
+    --text-dark: #f8f8f8;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--background-light);
+    color: var(--text-light);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: var(--background-dark);
+    color: var(--text-dark);
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 20px 0;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Dark mode title */
+body.dark-mode .title {
+    color: var(--secondary-color);
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.theme-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.theme-btn:hover {
+    background: var(--secondary-color);
+}
+
+/* Project Grid */
+.projects-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Project Cards */
+.project-card {
+    background: var(--card-bg-light);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+body.dark-mode .project-card {
+    background: var(--card-bg-dark);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Project Section */
+.projects-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-info {
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.demo-link {
+    background: #007bff;
+    color: #fff;
+}
+
+.code-link {
+    background: #28a745;
+    color: #fff;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+.dark-mode .project-card {
+    background: #343a40;
+}
+
+.dark-mode .btn {
+    color: white;
+}
+
+.theme-btn {
+    background: #222;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.theme-btn:hover {
+    opacity: 0.8;
+}
+
+
+
+/* Hover Effects */
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-info h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.project-info p {
+    font-size: 1rem;
+    color: var(--text-light);
+}
+
+body.dark-mode .project-info p {
+    color: var(--text-dark);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 10px 5px;
+    text-decoration: none;
+    color: white;
+    background: var(--primary-color);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--secondary-color);
+}
+
+/* Footer */
+.stay-tuned {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
